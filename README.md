@@ -2,6 +2,9 @@
 一个简洁的Android Studio插件。用于一键将layout文件夹中的text字符串资源提取到strings.xml中。
 
 
+### 插件下载地址：[点这里](https://github.com/zhouzhuo810/StringKiller/blob/master/StringKiller.jar)
+
+
 ## 示例图片
 
 
