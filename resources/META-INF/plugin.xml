@@ -1,0 +1,49 @@
+<idea-plugin>
+    <id>me.zhouzhuo810.stringkiller.plugin.id</id>
+    <name>StringKiller</name>
+    <version>1.0</version>
+    <vendor email="admin@zhouzhuo810.me" url="http://www.zhouzhuo810.me">zhouzhuo810</vendor>
+
+    <description><![CDATA[
+      本插件用于安卓开发中，将java文件或layout xml文件中的字符串资源整合到strings.xml中。<br>
+      <em>
+            <h2>StringKiller</h2>
+            </br>
+            <h3>Author:zhouzhuo810</h3>
+            </br>
+            <h3>Email:admin@zhouzhuo810.me</h3>
+      </em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+     ApiCreator v1.0.<br>
+      <em>
+            首次发布。
+      </em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="layout-dir-stringkiller" class="me.zhouzhuo810.stringkiller.action.LayoutDirAction"
+                text="Layout Dir To Strings"
+                description="小幺鸡接口文档转Retrofit接口和实体类工具">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt 3"/>
+        </action>
+    </actions>
+
+</idea-plugin>
