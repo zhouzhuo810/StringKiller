@@ -7,15 +7,6 @@ import java.io.*;
  */
 public class FileUtils {
 
-    /***
-     * 方法：
-     * @Title: replaceContentToFile
-     * @Description: TODO
-     * @param @param path 文件
-     * @param @param con  追加的文本
-     * @return void    返回类型
-     * @throws
-     */
     public static void replaceContentToFile(String path, String con) {
         try {
             OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(path), "UTF-8");
@@ -26,6 +17,18 @@ public class FileUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public static void closeQuietly(Closeable c) {
+        if(c != null) {
+            try {
+                c.close();
+            } catch (IOException var2) {
+                ;
+            }
+        }
+
     }
 
 }

@@ -8,19 +8,15 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.IdeActions;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
-import com.intellij.openapi.ide.CopyPasteManager;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.openapi.vfs.VirtualFileManager;
 import me.zhouzhuo810.stringkiller.bean.StringEntity;
 import me.zhouzhuo810.stringkiller.utils.FileUtils;
-import org.apache.commons.compress.utils.IOUtils;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -118,7 +114,7 @@ public class LayoutDirAction extends AnAction {
         } catch (IOException e1) {
             e1.printStackTrace();
         } finally {
-            IOUtils.closeQuietly(is);
+            FileUtils.closeQuietly(is);
         }
 
     }
