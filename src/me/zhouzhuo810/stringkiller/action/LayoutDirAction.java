@@ -144,6 +144,16 @@ public class LayoutDirAction extends AnAction {
                     oldContent = oldContent.replace(0, oldContent.length(), newContent);
                 }
             }
+            Node hintNode = node.getAttributes().getNamedItem("android:hint");
+            if (hintNode != null) {
+                String value = hintNode.getNodeValue();
+                if (!value.contains("@string")) {
+                    final String id = fileName + "_hint_text_" + (index++);
+                    strings.add(new StringEntity(id, value));
+                    String newContent = oldContent.toString().replaceFirst("\"" + value + "\"", "\"@string/" + id + "\"");
+                    oldContent = oldContent.replace(0, oldContent.length(), newContent);
+                }
+            }
         }
         NodeList children = node.getChildNodes();
         for (int j = 0; j < children.getLength(); j++) {
