@@ -5,14 +5,14 @@
 ### 插件下载地址：[点这里](https://github.com/zhouzhuo810/StringKiller/blob/master/StringKiller.jar)
 
 
-### 应用场景
+## 应用场景
 安卓开发过程中，大部分开发者为了偷懒，直接将字符串资源写在布局文件中，
 这种方式主要有如下缺点：
 - 导入工程中文容易出现乱码；
 - 国际化不利于统一翻译；
 - 修改字符串内容时不能快速定位;
 
-### 功能特性
+## 功能特性
 - 目前支持android:text和android:hint两个属性提取字符串。
 - 支持智能跳过@string/xxx.
 - 资源采用【"布局文件名称"+"text"/"hint_text"+序号】的命名方式，
