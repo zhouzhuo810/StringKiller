@@ -27,6 +27,11 @@
 
 ![demo](https://github.com/zhouzhuo810/StringKiller/blob/master/stringkiller.gif)
 
+## 改进
+
+如果有小伙伴对命名方式或功能有什么更好的想法，欢迎提建议。
+下面是我的邮箱：
+admin@zhouzhuo810.me
 
 ## License
 
