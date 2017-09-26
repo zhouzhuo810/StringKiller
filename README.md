@@ -20,6 +20,7 @@
 - 资源采用【"布局文件名称"+"text"/"hint_text"+序号】的命名方式，
 如【@string/activity_main_text_0】代表activity_main.xml文件中
 第1个android:text字符串资源。
+- 默认快捷键：Alt+3
 
 ## 示例图片
 
